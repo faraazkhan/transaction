@@ -36,6 +36,17 @@ group :doc do
   gem 'sdoc', require: false
 end
 gem 'rails_12factor', group: :production
+gem 'taps'
+
+group :development, :test do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'debugger'
+  gem 'fuubar'
+  gem 'irbtools', :require => false
+  gem 'irbtools-more', :require => false
+  #gem 'terminal-notifier'
+end
 
 
 # Use ActiveModel has_secure_password

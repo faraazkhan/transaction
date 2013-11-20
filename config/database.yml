@@ -1,4 +1,4 @@
-<% APPLICATION_NAME = Rails.application.class.parent_name.downcase %>
+<% APPLICATION_NAME = 'transaction' %>
 <% DB_TYPE='mysql2'%>
 
 common: &common
@@ -6,8 +6,8 @@ common: &common
  encoding: utf8
  reconnect: false
  pool: 5
- username: rails 
- password: 
+ username: rails
+ password:
 
 development:
  <<: *common
